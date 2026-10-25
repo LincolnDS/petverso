@@ -3,14 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetVerso - O Universo de Cuidados para o seu Pet</title>
+  <title>PetVerso — Guia e Tutorial do Aplicativo</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
-    html {
-      scroll-behavior: smooth !important;
-    }
-  </style>
   <script>
     tailwind.config = {
       theme: {
@@ -35,436 +30,115 @@
   <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-orange-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <div class="flex items-center">
-        <a href="#" class="text-3xl font-black bg-gradient-to-r from-brand-600 via-amber-500 to-brand-500 bg-clip-text text-transparent tracking-tight">
+        <a href="index.html" class="text-3xl font-black bg-gradient-to-r from-brand-600 via-amber-500 to-brand-500 bg-clip-text text-transparent tracking-tight">
           PetVerso
         </a>
       </div>
 
       <nav class="hidden md:flex items-center space-x-8">
-        <a href="#funcionalidades" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Funcionalidades</a>
-        <a href="#pets" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Pets Protegidos</a>
-        <a href="#evolucao" class="text-gray-600 hover:text-brand-600 font-medium transition-colors flex items-center gap-1">
-          <i data-lucide="kanban" class="w-4 h-4 text-brand-500"></i> Bastidores TCC
-        </a>
-        <a href="#equipe" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Equipe</a>
+        <a href="#passos" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Passo a Passo</a>
         
         <a href="tutorial.html" class="bg-brand-500 hover:bg-brand-600 text-white font-bold px-4 py-2 rounded-xl transition-all shadow-sm flex items-center gap-1.5 text-sm">
-          <i data-lucide="help-circle" class="w-4 h-4"></i> Como Usar
+          <i data-lucide="layout" class="w-4 h-4"></i> Ver Landing Page Completa
         </a>
       </nav>
     </div>
   </header>
 
-  <section class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <div class="inline-flex items-center space-x-2 bg-orange-100 text-brand-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
-      <i data-lucide="sparkles" class="w-4 h-4"></i>
-      <span>Tudo sobre o seu pet em um só lugar</span>
-    </div>
-    
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 tracking-tight max-w-4xl mx-auto leading-tight">
-      O universo de cuidados que o seu <span class="text-brand-500">Melhor Amigo</span> merece.
-    </h1>
-    
-    <p class="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-      Gerencie vacinas, agendamentos de banho, alimentação, vínculo entre tutores e a saúde do seu pet de forma simples, organizada e intuitiva.
-    </p>
-
-    <div class="mt-10 flex flex-wrap justify-center gap-6 max-w-3xl mx-auto">
-      <div class="bg-white px-6 py-4 rounded-2xl border border-orange-100 shadow-sm text-center flex-1 min-w-[140px]">
-        <span id="counterPets" class="text-3xl font-black text-brand-600 block">100%</span>
-        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Integrado</span>
+  <main class="flex-1">
+    <section class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center space-x-2 bg-orange-100 text-brand-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+        <i data-lucide="book-open" class="w-4 h-4"></i>
+        <span>Guia oficial do aplicativo</span>
       </div>
-      <div class="bg-white px-6 py-4 rounded-2xl border border-orange-100 shadow-sm text-center flex-1 min-w-[140px]">
-        <span id="counterVacinas" class="text-3xl font-black text-brand-600 block">MySQL</span>
-        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Banco Otimizado</span>
-      </div>
-      <div class="bg-white px-6 py-4 rounded-2xl border border-orange-100 shadow-sm text-center flex-1 min-w-[140px]">
-        <span id="counterSprints" class="text-3xl font-black text-brand-600 block">12</span>
-        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Sprints de TCC</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="funcionalidades" class="py-16 bg-white/60 border-y border-orange-100 scroll-mt-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-gray-900">Como o PetVerso facilita sua rotina</h2>
-        <p class="text-gray-600 mt-2">Ferramentas completas pensadas no bem-estar do seu companheiro.</p>
-      </div>
-
-      <div class="flex flex-wrap justify-center gap-2 mb-8">
-        <button onclick="switchTab('vacinas')" id="tab-vacinas" class="tab-btn bg-brand-500 text-white font-bold px-5 py-2.5 rounded-xl transition-all shadow-sm">Carteira de Vacinas</button>
-        <button onclick="switchTab('agenda')" id="tab-agenda" class="tab-btn bg-white text-gray-600 hover:bg-orange-100 font-bold px-5 py-2.5 rounded-xl transition-all">Agenda & Remédios</button>
-        <button onclick="switchTab('tutores')" id="tab-tutores" class="tab-btn bg-white text-gray-600 hover:bg-orange-100 font-bold px-5 py-2.5 rounded-xl transition-all">Vínculo Familiar</button>
-        <button onclick="switchTab('mysql')" id="tab-mysql" class="tab-btn bg-white text-gray-600 hover:bg-orange-100 font-bold px-5 py-2.5 rounded-xl transition-all">MySQL & Performance</button>
-      </div>
-
-      <div id="content-vacinas" class="tab-content bg-white p-8 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center mb-4">
-            <i data-lucide="syringe" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">Controle Completo de Imunização</h3>
-          <p class="text-gray-600 leading-relaxed text-sm mb-4">Tabela populada com as vacinas essenciais de cães e gatos. O app gera alertas de imunização e controla doses aplicadas e pendentes.</p>
-          <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-orange-100 px-3 py-1 rounded-full">
-            <i data-lucide="check" class="w-4 h-4"></i> Tabela V10, Raiva, V4/V5 e Giardia
-          </span>
-        </div>
-        <div class="bg-orange-50/80 p-5 rounded-2xl border border-orange-100 font-mono text-xs text-gray-700 space-y-2">
-          <div class="flex justify-between bg-white p-3 rounded-xl border border-orange-200">
-            <span>Vacina V10 (Anual)</span>
-            <span class="text-emerald-600 font-bold">Aplicada</span>
-          </div>
-          <div class="flex justify-between bg-white p-3 rounded-xl border border-orange-200">
-            <span>Antirrábica</span>
-            <span class="text-emerald-600 font-bold">Aplicada</span>
-          </div>
-          <div class="flex justify-between bg-white p-3 rounded-xl border border-orange-200">
-            <span>Reforço Vermífugo</span>
-            <span class="text-brand-600 font-bold">Lembrete Ativo</span>
-          </div>
-        </div>
-      </div>
-
-      <div id="content-agenda" class="tab-content hidden bg-white p-8 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center mb-4">
-            <i data-lucide="calendar" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">Agenda Inteligente com Seleção Rápida</h3>
-          <p class="text-gray-600 leading-relaxed text-sm mb-4">Modelos pré-configurados para consultas veterinárias, agendamentos de banho e tosa, e gerenciamento de medicamentos diários.</p>
-          <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-orange-100 px-3 py-1 rounded-full">
-            <i data-lucide="clock" class="w-4 h-4"></i> Notificação e chaves ON/OFF
-          </span>
-        </div>
-        <div class="bg-orange-50/80 p-5 rounded-2xl border border-orange-100 font-mono text-xs text-gray-700 space-y-2">
-          <div class="flex justify-between bg-white p-3 rounded-xl border border-orange-200">
-            <span>Banho & Tosa</span>
-            <span class="text-gray-500">Sábado às 10h</span>
-          </div>
-          <div class="flex justify-between bg-white p-3 rounded-xl border border-orange-200">
-            <span>Consulta Veterinária</span>
-            <span class="text-gray-500">Dia 25 às 14h</span>
-          </div>
-        </div>
-      </div>
-
-      <div id="content-tutores" class="tab-content hidden bg-white p-8 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center mb-4">
-            <i data-lucide="users" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">Vínculo Familiar de Tutores</h3>
-          <p class="text-gray-600 leading-relaxed text-sm mb-4">Gerencie um pet compartilhado entre várias pessoas. O sistema associa quem é o Tutor Principal e quem entra com permissões de Suporte.</p>
-          <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-orange-100 px-3 py-1 rounded-full">
-            <i data-lucide="shield-check" class="w-4 h-4"></i> Código de Vínculo Seguro
-          </span>
-        </div>
-        <div class="bg-orange-50/80 p-5 rounded-2xl border border-orange-100 font-mono text-xs text-gray-700 space-y-2">
-          <div class="flex justify-between bg-white p-3 rounded-xl border border-orange-200">
-            <span>Tutor Criador</span>
-            <span class="bg-brand-500 text-white px-2 py-0.5 rounded font-sans text-[10px]">Tutor Principal</span>
-          </div>
-          <div class="flex justify-between bg-white p-3 rounded-xl border border-orange-200">
-            <span>Membro Conectado</span>
-            <span class="bg-slate-600 text-white px-2 py-0.5 rounded font-sans text-[10px]">Suporte</span>
-          </div>
-        </div>
-      </div>
-
-      <div id="content-mysql" class="tab-content hidden bg-white p-8 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
-        <div>
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center mb-4">
-            <i data-lucide="database" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">Banco MySQL de Alta Performance</h3>
-          <p class="text-gray-600 leading-relaxed text-sm mb-4">Estrutura de dados normalizada, rotina automatizada de backup em script e queries otimizadas testadas com testes de carga.</p>
-          <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-orange-100 px-3 py-1 rounded-full">
-            <i data-lucide="cpu" class="w-4 h-4"></i> Backups e Queries Indexadas
-          </span>
-        </div>
-        <div class="bg-stone-900 text-amber-400 p-5 rounded-2xl font-mono text-xs space-y-1.5 overflow-x-auto shadow-inner">
-          <p class="text-gray-400">-- Script Otimizado MySQL --</p>
-          <p><span class="text-pink-400">SELECT</span> p.nome, t.papel <span class="text-pink-400">FROM</span> pets p</p>
-          <p><span class="text-pink-400">JOIN</span> tutores_pets t <span class="text-pink-400">ON</span> p.id = t.pet_id</p>
-          <p><span class="text-pink-400">WHERE</span> t.usuario_id = ?;</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="pets" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
-    <div class="text-center mb-8">
-      <h2 class="text-3xl font-bold text-gray-900">Pets Cadastrados no App</h2>
-      <p class="text-gray-600 mt-2">Filtre por espécie ou busque pelo nome para interagir com os perfis.</p>
-    </div>
-
-    <div class="max-w-xl mx-auto mb-10 flex flex-col sm:flex-row gap-3">
-      <div class="relative flex-1">
-        <i data-lucide="search" class="w-5 h-5 absolute left-3.5 top-3.5 text-gray-400"></i>
-        <input type="text" id="searchInput" onkeyup="filterPets()" placeholder="Buscar pet por nome..." class="w-full pl-10 pr-4 py-3 rounded-xl border border-orange-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white text-sm">
-      </div>
-      <div class="flex gap-2">
-        <button onclick="setFilter('todos')" class="filter-btn bg-brand-500 text-white font-bold px-4 py-3 rounded-xl text-xs flex-1 transition-all">Todos</button>
-        <button onclick="setFilter('cao')" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Cães</button>
-        <button onclick="setFilter('gato')" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Gatos</button>
-        <button onclick="setFilter('exotico')" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Outros</button>
-      </div>
-    </div>
-
-    <div id="petsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       
-      <div data-especie="cao" data-nome="thor" onclick="openModal('Thor', 'Cão', 'Beagle', '3 anos', '12 kg', 'Vacina V10 atualizada, Banho agendado para Sábado. Tutor Principal associado.', 'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-2xl overflow-hidden shadow-sm border border-orange-100 hover:shadow-lg transition-all cursor-pointer group">
-        <div class="relative h-48 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=600&q=80" alt="Thor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-brand-600 font-semibold text-xs px-2.5 py-1 rounded-full">Cão</span>
-        </div>
-        <div class="p-5">
-          <h3 class="text-xl font-bold text-gray-900">Thor</h3>
-          <p class="text-sm text-gray-500 mt-1">Agendamentos de banho e vacinas com notificação ativada.</p>
-          <div class="mt-4 flex items-center justify-between text-brand-600 font-medium text-sm">
-            <span>Perfil ativo</span>
-            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </div>
-        </div>
-      </div>
-
-      <div data-especie="gato" data-nome="frajola" onclick="openModal('Frajola', 'Gato', 'SDR', '2 anos', '4.2 kg', 'Histórico de exames limpo, Vermífugo em dia. Compartilhado com Tutor Suporte.', 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-2xl overflow-hidden shadow-sm border border-orange-100 hover:shadow-lg transition-all cursor-pointer group">
-        <div class="relative h-48 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Frajola" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-brand-600 font-semibold text-xs px-2.5 py-1 rounded-full">Gato</span>
-        </div>
-        <div class="p-5">
-          <h3 class="text-xl font-bold text-gray-900">Frajola</h3>
-          <p class="text-sm text-gray-500 mt-1">Histórico médico, vermífugos e exames organizados.</p>
-          <div class="mt-4 flex items-center justify-between text-brand-600 font-medium text-sm">
-            <span>Perfil ativo</span>
-            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </div>
-        </div>
-      </div>
-
-      <div data-especie="gato" data-nome="simba" onclick="openModal('Simba', 'Gato', 'Persa', '4 anos', '5 kg', 'Ração Renal especial, Monitoramento de hidratação ativo.', 'https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-2xl overflow-hidden shadow-sm border border-orange-100 hover:shadow-lg transition-all cursor-pointer group">
-        <div class="relative h-48 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=600&q=80" alt="Simba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-brand-600 font-semibold text-xs px-2.5 py-1 rounded-full">Gato</span>
-        </div>
-        <div class="p-5">
-          <h3 class="text-xl font-bold text-gray-900">Simba</h3>
-          <p class="text-sm text-gray-500 mt-1">Acompanhamento diário de consumo de água e rotina de ração.</p>
-          <div class="mt-4 flex items-center justify-between text-brand-600 font-medium text-sm">
-            <span>Perfil ativo</span>
-            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </div>
-        </div>
-      </div>
-
-      <div data-especie="exotico" data-nome="floquinho" onclick="openModal('Floquinho', 'Coelho', 'Mini Lion', '1 ano', '1.5 kg', 'Consulta de rotina com especialista em exóticos realizada.', 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-2xl overflow-hidden shadow-sm border border-orange-100 hover:shadow-lg transition-all cursor-pointer group">
-        <div class="relative h-48 overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=600&q=80" alt="Floquinho" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-          <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-brand-600 font-semibold text-xs px-2.5 py-1 rounded-full">Coelho</span>
-        </div>
-        <div class="p-5">
-          <h3 class="text-xl font-bold text-gray-900">Floquinho</h3>
-          <p class="text-sm text-gray-500 mt-1">Rotina de consultas com especialista em pets exóticos.</p>
-          <div class="mt-4 flex items-center justify-between text-brand-600 font-medium text-sm">
-            <span>Perfil ativo</span>
-            <i data-lucide="chevron-right" class="w-4 h-4"></i>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="evolucao" class="py-16 bg-white border-t border-orange-100 scroll-mt-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 tracking-tight max-w-4xl mx-auto leading-tight">
+        Como utilizar o <span class="text-brand-500">PetVerso</span> na prática
+      </h1>
       
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="bg-orange-100 text-brand-700 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded-full">Gestão & Desenvolvimento TCC</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Evolução e Bastidores da Criação</h2>
-        <p class="text-gray-600 mt-3 text-lg">Trajetória detalhada das Sprints do projeto, engenharia do banco de dados MySQL, APIs do Spring Boot e a inovadora apresentação web do TCC.</p>
-      </div>
-
-      <div class="relative border-l-2 border-brand-500/30 ml-4 md:ml-32 space-y-12 mb-16">
-        
-        <div class="relative pl-6 md:pl-8">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-orange-100"></div>
-          <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-orange-100 px-2.5 py-0.5 rounded-full">Planejamento & Escopo</span>
-          <h3 class="text-xl font-bold text-gray-900 mt-2">Especificação de Requisitos & Diagrama MER</h3>
-          <p class="text-gray-600 text-sm mt-1 max-w-2xl leading-relaxed">
-            Estruturação da Tabela de Requisitos Funcionais (RF) e Não Funcionais (RNF). Criação do Modelo de Entidade e Relacionamento (MER) conceitual com notação Chen para modelagem das entidades de Tutores, Pets, Vacinas e Agendamentos.
-          </p>
-        </div>
-
-        <div class="relative pl-6 md:pl-8">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-orange-100"></div>
-          <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-orange-100 px-2.5 py-0.5 rounded-full">Sprints 5 & 6 - Back-end e Módulos</span>
-          <h3 class="text-xl font-bold text-gray-900 mt-2">Endpoints Spring Boot & CRUD do Pet</h3>
-          <p class="text-gray-600 text-sm mt-1 max-w-2xl leading-relaxed">
-            Desenvolvimento dos endpoints REST em Spring Boot para cadastro de usuários, autenticação/login e operações de CRUD do Pet. Configuração de lembretes pré-definidos com chaves ON/OFF para rotinas diárias de alimentação e passeio.
-          </p>
-        </div>
-
-        <div class="relative pl-6 md:pl-8">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-orange-100"></div>
-          <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-orange-100 px-2.5 py-0.5 rounded-full">Sprints 7 & 8 - Regras do Banco & Telas Mobile</span>
-          <h3 class="text-xl font-bold text-gray-900 mt-2">Tabela Associativa TUTORES_PETS & Bottom Navigation</h3>
-          <p class="text-gray-600 text-sm mt-1 max-w-2xl leading-relaxed">
-            Implementação das regras de negócio para a tabela associativa <code class="bg-gray-100 px-1.5 py-0.5 rounded text-brand-700 font-mono">TUTORES_PETS</code>, permitindo validações de vínculo familiar entre contas (Tutor Principal x Suporte). Interface da Agenda com seleção rápida de modelos e navegação fluida via Bottom Navigation Bar.
-          </p>
-        </div>
-
-        <div class="relative pl-6 md:pl-8">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-orange-100"></div>
-          <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-orange-100 px-2.5 py-0.5 rounded-full">Sprints 9 & 10 - Validação, Otimização & Backup</span>
-          <h3 class="text-xl font-bold text-gray-900 mt-2">Massa de Dados, Testes de Carga & Script de Backup MySQL</h3>
-          <p class="text-gray-600 text-sm mt-1 max-w-2xl leading-relaxed">
-            Homologação dos códigos de vínculo entre tutores, criação e carga da massa de dados com pets fictícios alimentados para testes, execução de testes de carga no MySQL, otimização de consultas por pet/status e criação do script automatizado de backup.
-          </p>
-        </div>
-
-        <div class="relative pl-6 md:pl-8">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-orange-600 ring-4 ring-orange-200"></div>
-          <span class="text-xs font-bold uppercase tracking-wider text-white bg-brand-600 px-2.5 py-0.5 rounded-full">Metodologia Inovadora de Apresentação</span>
-          <h3 class="text-xl font-bold text-gray-900 mt-2">Desenvolvimento do Site Landing Page em Substituição ao PowerPoint</h3>
-          <p class="text-gray-600 text-sm mt-1 max-w-2xl leading-relaxed">
-            Como decisão metodológica do grupo para elevar o nível do TCC, optou-se por substituir os tradicionais slides estáticos de PowerPoint por uma <strong>Landing Page web interativa</strong>. O site atua como central da apresentação ao vivo, exibindo a proposta de valor, os pets protegidos, os bastidores de desenvolvimento e o time em um ambiente real e dinâmico.
-          </p>
-        </div>
-
-        <div class="relative pl-6 md:pl-8">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 ring-4 ring-emerald-100"></div>
-          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full">Sprints 11 & 12 - Finalização do TCC & Entregáveis</span>
-          <h3 class="text-xl font-bold text-gray-900 mt-2">Monografia Completa, Identidade Visual & Pitch Final</h3>
-          <p class="text-gray-600 text-sm mt-1 max-w-2xl leading-relaxed">
-            Inclusão das telas prontas e capturas na documentação do TCC, revisão e adequação conforme o novo checklist do professor, criação do Instagram oficial do projeto, design dos banners promocionais, cotação de lembrancinhas para a banca e alinhamento do roteiro do Pitch.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section id="equipe" class="py-16 bg-cream border-t border-orange-100 scroll-mt-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="bg-orange-100 text-brand-700 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded-full">Nosso Time</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Membros do Grupo</h2>
-        <p class="text-gray-600 mt-2">Conheça os responsáveis por dar vida ao projeto PetVerso.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <div class="bg-white p-6 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center font-bold text-lg mb-4">
-            CE
-          </div>
-          <h3 class="text-xl font-bold text-gray-900">Carlos Eduardo</h3>
-          <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block mb-2">Desenvolvedor Mobile</span>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            Responsável pelo desenvolvimento da interface do aplicativo mobile, construção e prototipagem das telas e usabilidade do usuário.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center font-bold text-lg mb-4">
-            JL
-          </div>
-          <h3 class="text-xl font-bold text-gray-900">Juan Lopes</h3>
-          <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block mb-2">Desenvolvedor da API</span>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            Responsável pela criação, estruturação e integração dos Endpoints da API REST em Spring Boot.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center font-bold text-lg mb-4">
-            DY
-          </div>
-          <h3 class="text-xl font-bold text-gray-900">Daniel Yuji (Japonês)</h3>
-          <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block mb-2">Banco de Dados & Mobile</span>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            Responsável pela modelagem, otimização de consultas e rotinas do Banco de Dados MySQL, além de atuar no suporte ao desenvolvimento das telas mobile.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center font-bold text-lg mb-4">
-            IB
-          </div>
-          <h3 class="text-xl font-bold text-gray-900">Ingrid Brito</h3>
-          <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block mb-2">Gestora do Projeto</span>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            Responsável pela documentação do TCC, organização do cronograma de datas, gestão de entregas, planejamento da apresentação, orçamentos e parte administrativa.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow md:col-span-2 lg:col-span-1">
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center font-bold text-lg mb-4">
-            GL
-          </div>
-          <h3 class="text-xl font-bold text-gray-900">Gabriel Lincoln</h3>
-          <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block mb-2">Desenvolvedor Front-End Web</span>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            Responsável pelo desenvolvimento da Landing Page interativa web para a abertura do projeto, viabilizando a apresentação dinâmica em substituição aos slides tradicionais.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="py-16 bg-white border-t border-orange-100">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <div class="w-16 h-16 rounded-2xl bg-orange-100 text-brand-600 flex items-center justify-center mx-auto mb-4">
-        <i data-lucide="heart" class="w-8 h-8"></i>
-      </div>
-      <h2 class="text-3xl font-bold text-gray-900 mb-4">Agradecimentos Especiais</h2>
-      <p class="text-gray-600 leading-relaxed text-base max-w-2xl mx-auto">
-        Expressamos nossa sincera gratidão a todos os professores e orientadores que nos acompanharam ao longo desta jornada acadêmica. O seu conhecimento, paciência, direcionamentos técnicos e incentivos foram fundamentais para a construção e o sucesso do projeto <strong>PetVerso</strong>.
+      <p class="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        Aprenda de forma rápida como cadastrar o seu pet, gerenciar a agenda de cuidados e compartilhar a rotina com a sua família. Clique em qualquer imagem para ampliá-la.
       </p>
-    </div>
-  </section>
+    </section>
 
-  <div id="petModal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl transition-all transform scale-100">
-      <div class="relative h-56">
-        <img id="modalImg" src="" alt="Pet" class="w-full h-full object-cover">
-        <button onclick="closeModal()" class="absolute top-4 right-4 bg-white/80 backdrop-blur-md text-gray-700 hover:text-black rounded-full p-2 transition-colors">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
+    <section id="passos" class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="bg-white p-8 sm:p-10 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <span class="inline-block bg-orange-100 text-brand-700 font-black text-sm px-3 py-1 rounded-full mb-4">Passo 01</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Cadastro e Perfil do Pet</h2>
+          <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+            O primeiro passo é registrar as informações principais do seu animal de estimação. Insira o nome, espécie, raça, idade e peso para manter todo o histórico médico e de vacinação organizado em um só lugar.
+          </p>
+        </div>
+        <div class="bg-white p-3 rounded-2xl border border-orange-200 shadow-sm flex flex-col items-center justify-center text-center mx-auto w-full max-w-sm group">
+          <div class="w-full rounded-xl overflow-hidden bg-gray-50 cursor-pointer relative shadow-inner" onclick="openImageModal('imagens/tutorial-tela-1.png', 'Cadastro e Perfil do Pet')">
+            <img src="imagens/tutorial-tela-1.png" alt="Tela de Cadastro e Perfil do Pet" class="w-full h-auto object-cover max-h-[320px] group-hover:scale-105 transition-transform duration-300" onerror="this.parentElement.innerHTML='<div class=\'py-12 text-gray-400 text-xs\'><i data-lucide=\'image\' class=\'w-8 h-8 mx-auto mb-2 opacity-50\'></i><strong>Adicione a imagem</strong><br>imagens/tutorial-tela-1.png</div>'">
+            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-bold text-xs gap-1">
+              <i data-lucide="zoom-in" class="w-5 h-5"></i> Clique para ampliar
+            </div>
+          </div>
+          <span class="text-xs text-gray-400 mt-2">Tela 1: Perfil do Pet</span>
+        </div>
       </div>
-      <div class="p-6">
-        <div class="flex justify-between items-start mb-4">
-          <div>
-            <h3 id="modalName" class="text-2xl font-extrabold text-gray-900"></h3>
-            <p id="modalEspecie" class="text-sm font-semibold text-brand-600"></p>
-          </div>
-          <span class="bg-orange-100 text-brand-700 text-xs font-bold px-3 py-1 rounded-full">Status: Em dia</span>
-        </div>
 
-        <div class="grid grid-cols-2 gap-4 my-4 p-4 bg-orange-50/50 rounded-2xl border border-orange-100 text-sm">
-          <div>
-            <span class="text-gray-500 block">Idade</span>
-            <span id="modalIdade" class="font-bold text-gray-800"></span>
-          </div>
-          <div>
-            <span class="text-gray-500 block">Peso</span>
-            <span id="modalPeso" class="font-bold text-gray-800"></span>
-          </div>
+      <div class="bg-white p-8 sm:p-10 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+        <div class="md:order-2">
+          <span class="inline-block bg-orange-100 text-brand-700 font-black text-sm px-3 py-1 rounded-full mb-4">Passo 02</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Agenda de Cuidados & Lembretes</h2>
+          <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+            Utilize a aba de agenda para gerenciar compromissos importantes como banhos, tosas, consultas veterinárias e horários de medicamentos. O sistema conta com chaves rápidas e notificações para você não perder nada.
+          </p>
         </div>
-
-        <div class="mt-4">
-          <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Resumo de Saúde & Agenda</h4>
-          <p id="modalInfo" class="text-sm text-gray-600 leading-relaxed"></p>
+        <div class="bg-white p-3 rounded-2xl border border-orange-200 shadow-sm flex flex-col items-center justify-center text-center mx-auto w-full max-w-sm md:order-1 group">
+          <div class="w-full rounded-xl overflow-hidden bg-gray-50 cursor-pointer relative shadow-inner" onclick="openImageModal('imagens/tutorial-tela-2.png', 'Agenda de Cuidados & Lembretes')">
+            <img src="imagens/tutorial-tela-2.png" alt="Tela da Agenda de Cuidados" class="w-full h-auto object-cover max-h-[320px] group-hover:scale-105 transition-transform duration-300" onerror="this.parentElement.innerHTML='<div class=\'py-12 text-gray-400 text-xs\'><i data-lucide=\'image\' class=\'w-8 h-8 mx-auto mb-2 opacity-50\'></i><strong>Adicione a imagem</strong><br>imagens/tutorial-tela-2.png</div>'">
+            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-bold text-xs gap-1">
+              <i data-lucide="zoom-in" class="w-5 h-5"></i> Clique para ampliar
+            </div>
+          </div>
+          <span class="text-xs text-gray-400 mt-2">Tela 2: Agenda</span>
         </div>
+      </div>
 
-        <button onclick="closeModal()" class="mt-6 w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl transition-colors shadow-md">
-          Fechar Visualização
-        </button>
+      <div class="bg-white p-8 sm:p-10 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <span class="inline-block bg-orange-100 text-brand-700 font-black text-sm px-3 py-1 rounded-full mb-4">Passo 03</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Tutoria Compartilhada & Vínculos</h2>
+          <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+            Como cuidar de um pet é uma tarefa coletiva, o Tutor Principal pode gerar um código de vínculo seguro para convidar familiares ou cuidadores. Assim, todos acompanham e atualizam as informações do mesmo animal simultaneamente.
+          </p>
+        </div>
+        <div class="bg-white p-3 rounded-2xl border border-orange-200 shadow-sm flex flex-col items-center justify-center text-center mx-auto w-full max-w-sm group">
+          <div class="w-full rounded-xl overflow-hidden bg-gray-50 cursor-pointer relative shadow-inner" onclick="openImageModal('imagens/tutorial-tela-3.png', 'Tutoria Compartilhada & Vínculos')">
+            <img src="imagens/tutorial-tela-3.png" alt="Tela de Tutoria Compartilhada" class="w-full h-auto object-cover max-h-[320px] group-hover:scale-105 transition-transform duration-300" onerror="this.parentElement.innerHTML='<div class=\'py-12 text-gray-400 text-xs\'><i data-lucide=\'image\' class=\'w-8 h-8 mx-auto mb-2 opacity-50\'></i><strong>Adicione a imagem</strong><br>imagens/tutorial-tela-3.png</div>'">
+            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-bold text-xs gap-1">
+              <i data-lucide="zoom-in" class="w-5 h-5"></i> Clique para ampliar
+            </div>
+          </div>
+          <span class="text-xs text-gray-400 mt-2">Tela 3: Vínculos</span>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="text-center py-16">
+      <a href="tutorial.html" class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-md text-base">
+        <i data-lucide="arrow-right" class="w-5 h-5"></i> Acessar Landing Page do Projeto
+      </a>
+    </div>
+  </main>
+
+  <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4" onclick="closeImageModal()">
+    <div class="relative max-w-4xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl p-2" onclick="event.stopPropagation()">
+      <button onclick="closeImageModal()" class="absolute top-4 right-4 bg-gray-900/70 hover:bg-black text-white rounded-full p-2.5 transition-colors z-10">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div class="p-2 pb-1 text-left">
+        <h3 id="modalImageTitle" class="text-lg font-bold text-gray-800">Visualização do Print</h3>
+      </div>
+      <div class="p-2 flex items-center justify-center bg-gray-900 rounded-xl overflow-hidden">
+        <img id="modalImageSrc" src="" alt="Print Ampliado" class="max-h-[75vh] w-auto object-contain rounded-lg">
       </div>
     </div>
   </div>
@@ -478,72 +152,14 @@
   <script>
     lucide.createIcons();
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-
-    let currentFilter = 'todos';
-
-    function switchTab(tab) {
-      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-      document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.remove('bg-brand-500', 'text-white');
-        btn.classList.add('bg-white', 'text-gray-600');
-      });
-
-      document.getElementById('content-' + tab).classList.remove('hidden');
-      const activeBtn = document.getElementById('tab-' + tab);
-      activeBtn.classList.remove('bg-white', 'text-gray-600');
-      activeBtn.classList.add('bg-brand-500', 'text-white');
+    function openImageModal(imgSrc, title) {
+      document.getElementById('modalImageSrc').src = imgSrc;
+      document.getElementById('modalImageTitle').innerText = title;
+      document.getElementById('imageModal').classList.remove('hidden');
     }
 
-    function setFilter(filter) {
-      currentFilter = filter;
-      filterPets();
-    }
-
-    function filterPets() {
-      const search = document.getElementById('searchInput').value.toLowerCase();
-      const cards = document.querySelectorAll('.pet-card');
-
-      cards.forEach(card => {
-        const especie = card.getAttribute('data-especie');
-        const nome = card.getAttribute('data-nome');
-
-        const matchesFilter = (currentFilter === 'todos' || especie === currentFilter);
-        const matchesSearch = nome.includes(search);
-
-        if (matchesFilter && matchesSearch) {
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-    }
-
-    function openModal(nome, especie, raca, idade, peso, info, img) {
-      document.getElementById('modalName').innerText = nome;
-      document.getElementById('modalEspecie').innerText = especie + ' • ' + raca;
-      document.getElementById('modalIdade').innerText = idade;
-      document.getElementById('modalPeso').innerText = peso;
-      document.getElementById('modalInfo').innerText = info;
-      document.getElementById('modalImg').src = img;
-      document.getElementById('petModal').classList.remove('hidden');
-    }
-
-    function closeModal() {
-      document.getElementById('petModal').classList.add('hidden');
+    function closeImageModal() {
+      document.getElementById('imageModal').classList.add('hidden');
     }
   </script>
 </body>
