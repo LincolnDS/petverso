@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetVerso — Tutorial e Como Utilizar o Aplicativo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+            },
+            cream: '#FDF8F5'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cream text-gray-800 font-sans antialiased min-h-screen flex flex-col scroll-smooth">
+
+  <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-orange-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center">
+        <a href="index.html" class="text-3xl font-black bg-gradient-to-r from-brand-600 via-amber-500 to-brand-500 bg-clip-text text-transparent tracking-tight">
+          PetVerso
+        </a>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="index.html#funcionalidades" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Funcionalidades</a>
+        <a href="index.html#pets" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Pets Protegidos</a>
+        <a href="index.html#evolucao" class="text-gray-600 hover:text-brand-600 font-medium transition-colors flex items-center gap-1">
+          <i data-lucide="kanban" class="w-4 h-4 text-brand-500"></i> Bastidores TCC
+        </a>
+        <a href="index.html#equipe" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Equipe</a>
+        
+        <a href="index.html" class="bg-white border border-orange-200 text-gray-700 hover:bg-orange-50 font-bold px-4 py-2 rounded-xl transition-all shadow-sm flex items-center gap-1.5 text-sm">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i> Voltar ao Início
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <section class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center space-x-2 bg-orange-100 text-brand-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+        <i data-lucide="book-open" class="w-4 h-4"></i>
+        <span>Guia passo a passo</span>
+      </div>
+      
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 tracking-tight max-w-4xl mx-auto leading-tight">
+        Como utilizar o <span class="text-brand-500">PetVerso</span> na prática
+      </h1>
+      
+      <p class="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        Aprenda de forma rápida como cadastrar o seu pet, gerenciar a agenda de cuidados e compartilhar a rotina com a sua família.
+      </p>
+    </section>
+
+    <section class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="bg-white p-8 sm:p-10 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <span class="inline-block bg-orange-100 text-brand-700 font-black text-sm px-3 py-1 rounded-full mb-4">Passo 01</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Cadastro e Perfil do Pet</h2>
+          <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+            O primeiro passo é registrar as informações principais do seu animal de estimação. Insira o nome, espécie, raça, idade e peso para manter todo o histórico médico e de vacinação organizado em um só lugar.
+          </p>
+        </div>
+        <div class="bg-orange-50/50 aspect-[9/16] max-h-[420px] rounded-2xl border-2 border-dashed border-orange-200 flex flex-col items-center justify-center p-6 text-center mx-auto w-full">
+          <img src="imagens/tutorial-tela-1.png" alt="Tela de Cadastro e Perfil do Pet" class="w-full h-full object-cover rounded-xl shadow-inner mb-2" onerror="this.style.display='none'">
+          <div class="text-gray-400 text-xs mt-auto">
+            <i data-lucide="image" class="w-8 h-8 mx-auto mb-1 opacity-50"></i>
+            <strong>Caixa para Print 1</strong><br>(Salve a imagem em: imagens/tutorial-tela-1.png)
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-8 sm:p-10 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+        <div class="md:order-2">
+          <span class="inline-block bg-orange-100 text-brand-700 font-black text-sm px-3 py-1 rounded-full mb-4">Passo 02</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Agenda de Cuidados & Lembretes</h2>
+          <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+            Utilize a aba de agenda para gerenciar compromissos importantes como banhos, tosas, consultas veterinárias e horários de medicamentos. O sistema conta com chaves rápidas e notificações para você não perder nada.
+          </p>
+        </div>
+        <div class="bg-orange-50/50 aspect-[9/16] max-h-[420px] rounded-2xl border-2 border-dashed border-orange-200 flex flex-col items-center justify-center p-6 text-center mx-auto w-full md:order-1">
+          <img src="imagens/tutorial-tela-2.png" alt="Tela da Agenda de Cuidados" class="w-full h-full object-cover rounded-xl shadow-inner mb-2" onerror="this.style.display='none'">
+          <div class="text-gray-400 text-xs mt-auto">
+            <i data-lucide="image" class="w-8 h-8 mx-auto mb-1 opacity-50"></i>
+            <strong>Caixa para Print 2</strong><br>(Salve a imagem em: imagens/tutorial-tela-2.png)
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-8 sm:p-10 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <span class="inline-block bg-orange-100 text-brand-700 font-black text-sm px-3 py-1 rounded-full mb-4">Passo 03</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Tutoria Compartilhada & Vínculos</h2>
+          <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+            Como cuidar de um pet é uma tarefa coletiva, o Tutor Principal pode gerar um código de vínculo seguro para convidar familiares ou cuidadores. Assim, todos acompanham e atualizam as informações do mesmo animal simultaneamente.
+          </p>
+        </div>
+        <div class="bg-orange-50/50 aspect-[9/16] max-h-[420px] rounded-2xl border-2 border-dashed border-orange-200 flex flex-col items-center justify-center p-6 text-center mx-auto w-full">
+          <img src="imagens/tutorial-tela-3.png" alt="Tela de Tutoria Compartilhada" class="w-full h-full object-cover rounded-xl shadow-inner mb-2" onerror="this.style.display='none'">
+          <div class="text-gray-400 text-xs mt-auto">
+            <i data-lucide="image" class="w-8 h-8 mx-auto mb-1 opacity-50"></i>
+            <strong>Caixa para Print 3</strong><br>(Salve a imagem em: imagens/tutorial-tela-3.png)
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="text-center py-16">
+      <a href="index.html" class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-md text-base">
+        <i data-lucide="arrow-left" class="w-5 h-5"></i> Voltar para a Página Inicial
+      </a>
+    </div>
+  </main>
+
+  <footer class="mt-auto bg-white border-t border-orange-100 py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+      <p>&copy; 2026 PetVerso - Gestão de TCC. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

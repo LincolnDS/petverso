@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PetVerso - O Universo de Cuidados para o seu Pet</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html {
+      scroll-behavior: smooth !important;
+    }
+  </style>
   <script>
     tailwind.config = {
       theme: {
@@ -29,13 +34,10 @@
 
   <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-orange-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <div class="flex items-center space-x-3">
-        <div class="w-12 h-12 rounded-full border-2 border-amber-600/60 overflow-hidden shadow-md flex items-center justify-center bg-stone-900">
-          <img src="logo.png" alt="PetVerso Logo" class="w-full h-full object-cover">
-        </div>
-        <span class="text-2xl font-extrabold bg-gradient-to-r from-brand-600 to-amber-500 bg-clip-text text-transparent">
+      <div class="flex items-center">
+        <a href="#" class="text-3xl font-black bg-gradient-to-r from-brand-600 via-amber-500 to-brand-500 bg-clip-text text-transparent tracking-tight">
           PetVerso
-        </span>
+        </a>
       </div>
 
       <nav class="hidden md:flex items-center space-x-8">
@@ -45,6 +47,10 @@
           <i data-lucide="kanban" class="w-4 h-4 text-brand-500"></i> Bastidores TCC
         </a>
         <a href="#equipe" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Equipe</a>
+        
+        <a href="tutorial.html" class="bg-brand-500 hover:bg-brand-600 text-white font-bold px-4 py-2 rounded-xl transition-all shadow-sm flex items-center gap-1.5 text-sm">
+          <i data-lucide="help-circle" class="w-4 h-4"></i> Como Usar
+        </a>
       </nav>
     </div>
   </header>
@@ -79,7 +85,7 @@
     </div>
   </section>
 
-  <section id="funcionalidades" class="py-16 bg-white/60 border-y border-orange-100">
+  <section id="funcionalidades" class="py-16 bg-white/60 border-y border-orange-100 scroll-mt-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h2 class="text-3xl font-bold text-gray-900">Como o PetVerso facilita sua rotina</h2>
@@ -188,7 +194,7 @@
     </div>
   </section>
 
-  <section id="pets" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="pets" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
     <div class="text-center mb-8">
       <h2 class="text-3xl font-bold text-gray-900">Pets Cadastrados no App</h2>
       <p class="text-gray-600 mt-2">Filtre por espécie ou busque pelo nome para interagir com os perfis.</p>
@@ -272,7 +278,7 @@
     </div>
   </section>
 
-  <section id="evolucao" class="py-16 bg-white border-t border-orange-100">
+  <section id="evolucao" class="py-16 bg-white border-t border-orange-100 scroll-mt-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -342,7 +348,7 @@
     </div>
   </section>
 
-  <section id="equipe" class="py-16 bg-cream border-t border-orange-100">
+  <section id="equipe" class="py-16 bg-cream border-t border-orange-100 scroll-mt-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-12">
         <span class="bg-orange-100 text-brand-700 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded-full">Nosso Time</span>
@@ -368,9 +374,9 @@
             JL
           </div>
           <h3 class="text-xl font-bold text-gray-900">Juan Lopes</h3>
-          <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block mb-2">Desenvolvedor Full Stack & API</span>
+          <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider block mb-2">Desenvolvedor da API</span>
           <p class="text-gray-600 text-sm leading-relaxed">
-            Responsável pela arquitetura Full Stack, com especial foco na criação, estruturação e integração dos Endpoints da API REST em Spring Boot.
+            Responsável pela criação, estruturação e integração dos Endpoints da API REST em Spring Boot.
           </p>
         </div>
 
@@ -471,6 +477,21 @@
 
   <script>
     lucide.createIcons();
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
 
     let currentFilter = 'todos';
 
