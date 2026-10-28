@@ -49,7 +49,7 @@
         <a href="#equipe" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Equipe</a>
         
         <a href="index.html" class="bg-brand-500 hover:bg-brand-600 text-white font-bold px-4 py-2 rounded-xl transition-all shadow-sm flex items-center gap-1.5 text-sm">
-          <i data-lucide="book-open" class="w-4 h-4"></i> Ver Tutorial (Início)
+          <i data-lucide="book-open" class="w-4 h-4"></i> Inicio
         </a>
       </nav>
     </div>
@@ -93,7 +93,7 @@
       </div>
 
       <div class="flex flex-wrap justify-center gap-2 mb-8">
-        <button onclick="switchTab('vacinas')" id="tab-vacinas" class="tab-btn bg-brand-500 text-white font-bold px-5 py-2.5 rounded-xl transition-all shadow-sm">Carteira de Vacinas</button>
+        <button onclick="switchTab('vacinas')" id="tab-vacinas" class="tab-btn bg-brand-500 text-white font-bold px-5 py-2.5 rounded-xl transition-all shadow-sm">Registro de Vacinas</button>
         <button onclick="switchTab('agenda')" id="tab-agenda" class="tab-btn bg-white text-gray-600 hover:bg-orange-100 font-bold px-5 py-2.5 rounded-xl transition-all">Agenda & Remédios</button>
         <button onclick="switchTab('tutores')" id="tab-tutores" class="tab-btn bg-white text-gray-600 hover:bg-orange-100 font-bold px-5 py-2.5 rounded-xl transition-all">Vínculo Familiar</button>
         <button onclick="switchTab('mysql')" id="tab-mysql" class="tab-btn bg-white text-gray-600 hover:bg-orange-100 font-bold px-5 py-2.5 rounded-xl transition-all">MySQL & Performance</button>
@@ -105,7 +105,7 @@
             <i data-lucide="syringe" class="w-6 h-6"></i>
           </div>
           <h3 class="text-2xl font-bold text-gray-900 mb-3">Controle Completo de Imunização</h3>
-          <p class="text-gray-600 leading-relaxed text-sm mb-4">Tabela populada com as vacinas essenciais de cães e gatos. O app gera alertas de imunização e controla doses aplicadas e pendentes.</p>
+          <p class="text-gray-600 leading-relaxed text-sm mb-4">Registro e acompanhamento de vacinas de cães e gatos, com controle das doses aplicadas e do acompanhamento de imunização.</p>
           <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-orange-100 px-3 py-1 rounded-full">
             <i data-lucide="check" class="w-4 h-4"></i> Tabela V10, Raiva, V4/V5 e Giardia
           </span>
@@ -134,7 +134,7 @@
           <h3 class="text-2xl font-bold text-gray-900 mb-3">Agenda Inteligente com Seleção Rápida</h3>
           <p class="text-gray-600 leading-relaxed text-sm mb-4">Modelos pré-configurados para consultas veterinárias, agendamentos de banho e tosa, e gerenciamento de medicamentos diários.</p>
           <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-orange-100 px-3 py-1 rounded-full">
-            <i data-lucide="clock" class="w-4 h-4"></i> Notificação e chaves ON/OFF
+            <i data-lucide="clock" class="w-4 h-4"></i> Organização e acompanhamento de rotina
           </span>
         </div>
         <div class="bg-orange-50/80 p-5 rounded-2xl border border-orange-100 font-mono text-xs text-gray-700 space-y-2">
@@ -222,7 +222,7 @@
         </div>
         <div class="p-5">
           <h3 class="text-xl font-bold text-gray-900">Thor</h3>
-          <p class="text-sm text-gray-500 mt-1">Agendamentos de banho e vacinas com notificação ativada.</p>
+          <p class="text-sm text-gray-500 mt-1">Agendamentos de banho e vacinas em um único lugar.</p>
           <div class="mt-4 flex items-center justify-between text-brand-600 font-medium text-sm">
             <span>Perfil ativo</span>
             <i data-lucide="chevron-right" class="w-4 h-4"></i>
@@ -230,14 +230,14 @@
         </div>
       </div>
 
-      <div data-especie="gato" data-nome="frajola" onclick="openModal('Frajola', 'Gato', 'SDR', '2 anos', '4.2 kg', 'Histórico de exames limpo, Vermífugo em dia. Compartilhado com Tutor Suporte.', 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-2xl overflow-hidden shadow-sm border border-orange-100 hover:shadow-lg transition-all cursor-pointer group">
+      <div data-especie="gato" data-nome="frajola" onclick="openModal('Frajola', 'Gato', 'SDR', '2 anos', '4.2 kg', 'Informações do pet e registros de vacinação em dia. Compartilhado com Tutor Suporte.', 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-2xl overflow-hidden shadow-sm border border-orange-100 hover:shadow-lg transition-all cursor-pointer group">
         <div class="relative h-48 overflow-hidden">
           <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Frajola" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-brand-600 font-semibold text-xs px-2.5 py-1 rounded-full">Gato</span>
         </div>
         <div class="p-5">
           <h3 class="text-xl font-bold text-gray-900">Frajola</h3>
-          <p class="text-sm text-gray-500 mt-1">Histórico médico, vermífugos e exames organizados.</p>
+          <p class="text-sm text-gray-500 mt-1">Informações do pet e registros de vacinação organizados.</p>
           <div class="mt-4 flex items-center justify-between text-brand-600 font-medium text-sm">
             <span>Perfil ativo</span>
             <i data-lucide="chevron-right" class="w-4 h-4"></i>
