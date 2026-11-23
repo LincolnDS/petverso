@@ -32,10 +32,10 @@
 </head>
 <body class="bg-cream text-gray-800 font-sans antialiased min-h-screen flex flex-col scroll-smooth">
 
-  <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-orange-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur-md border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center">
-        <a href="index.html" class="text-3xl font-black bg-gradient-to-r from-brand-600 via-amber-500 to-brand-500 bg-clip-text text-transparent tracking-tight">
+        <a href="index.html" class="text-2xl font-bold text-brand-700 tracking-tight">
           PetVerso
         </a>
       </div>
@@ -48,44 +48,48 @@
         </a>
         <a href="#equipe" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Equipe</a>
         
-        <a href="index.html" class="bg-brand-500 hover:bg-brand-600 text-white font-bold px-4 py-2 rounded-xl transition-all shadow-sm flex items-center gap-1.5 text-sm">
+        <a href="index.html" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors shadow-sm flex items-center gap-1.5 text-sm">
           <i data-lucide="book-open" class="w-4 h-4"></i> Inicio
         </a>
       </nav>
     </div>
   </header>
 
-  <section class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <div class="inline-flex items-center space-x-2 bg-orange-100 text-brand-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
-      <i data-lucide="sparkles" class="w-4 h-4"></i>
-      <span>Tudo sobre o seu pet em um só lugar</span>
-    </div>
-    
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 tracking-tight max-w-4xl mx-auto leading-tight">
-      O universo de cuidados que o seu <span class="text-brand-500">Melhor Amigo</span> merece.
-    </h1>
-    
-    <p class="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-      Gerencie vacinas, agendamentos de banho, alimentação, vínculo entre tutores e a saúde do seu pet de forma simples, organizada e intuitiva.
-    </p>
+  <section class="py-14 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-[1.2fr_0.8fr] gap-10 items-center">
+      <div class="text-center lg:text-left">
+        <div class="inline-flex items-center space-x-2 bg-orange-100/80 text-brand-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+          <i data-lucide="heart" class="w-4 h-4"></i>
+          <span>Tudo sobre o seu pet em um só lugar</span>
+        </div>
 
-    <div class="mt-10 flex flex-wrap justify-center gap-6 max-w-3xl mx-auto">
-      <div class="bg-white px-6 py-4 rounded-2xl border border-orange-100 shadow-sm text-center flex-1 min-w-[140px]">
-        <span id="counterPets" class="text-3xl font-black text-brand-600 block">100%</span>
-        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Integrado</span>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 tracking-tight max-w-4xl mx-auto lg:mx-0 leading-tight">
+          O universo de cuidados que o seu <span class="text-brand-500">Melhor Amigo</span> merece.
+        </h1>
+
+        <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+          Gerencie vacinas, agendamentos de banho, alimentação, vínculo entre tutores e a saúde do seu pet de forma simples, organizada e intuitiva.
+        </p>
       </div>
-      <div class="bg-white px-6 py-4 rounded-2xl border border-orange-100 shadow-sm text-center flex-1 min-w-[140px]">
-        <span id="counterVacinas" class="text-3xl font-black text-brand-600 block">MySQL</span>
-        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Banco Otimizado</span>
-      </div>
-      <div class="bg-white px-6 py-4 rounded-2xl border border-orange-100 shadow-sm text-center flex-1 min-w-[140px]">
-        <span id="counterSprints" class="text-3xl font-black text-brand-600 block">12</span>
-        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Sprints de TCC</span>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-3 max-w-3xl mx-auto w-full">
+        <div class="bg-white px-6 py-4 rounded-xl border border-stone-200 shadow-sm text-center lg:text-left">
+          <span id="counterPets" class="text-2xl font-bold text-brand-700 block">100%</span>
+          <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Integrado</span>
+        </div>
+        <div class="bg-white px-6 py-4 rounded-xl border border-stone-200 shadow-sm text-center lg:text-left">
+          <span id="counterVacinas" class="text-2xl font-bold text-brand-700 block">MySQL</span>
+          <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Banco Otimizado</span>
+        </div>
+        <div class="bg-white px-6 py-4 rounded-xl border border-stone-200 shadow-sm text-center lg:text-left">
+          <span id="counterSprints" class="text-2xl font-bold text-brand-700 block">12</span>
+          <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Sprints de TCC</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="funcionalidades" class="py-16 bg-white/60 border-y border-orange-100 scroll-mt-24">
+  <section id="funcionalidades" class="py-16 bg-white/70 border-y border-stone-200 scroll-mt-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h2 class="text-3xl font-bold text-gray-900">Como o PetVerso facilita sua rotina</h2>
@@ -93,18 +97,18 @@
       </div>
 
       <div class="flex flex-wrap justify-center gap-2 mb-8">
-        <button onclick="switchTab('vacinas')" id="tab-vacinas" class="tab-btn bg-brand-500 text-white font-bold px-5 py-2.5 rounded-xl transition-all shadow-sm">Registro de Vacinas</button>
-        <button onclick="switchTab('agenda')" id="tab-agenda" class="tab-btn bg-white text-gray-600 hover:bg-orange-100 font-bold px-5 py-2.5 rounded-xl transition-all">Agenda & Remédios</button>
-        <button onclick="switchTab('tutores')" id="tab-tutores" class="tab-btn bg-white text-gray-600 hover:bg-orange-100 font-bold px-5 py-2.5 rounded-xl transition-all">Vínculo Familiar</button>
-        <button onclick="switchTab('mysql')" id="tab-mysql" class="tab-btn bg-white text-gray-600 hover:bg-orange-100 font-bold px-5 py-2.5 rounded-xl transition-all">MySQL & Performance</button>
+        <button onclick="switchTab('vacinas')" id="tab-vacinas" class="tab-btn bg-brand-600 text-white font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-sm">Registro de Vacinas</button>
+        <button onclick="switchTab('agenda')" id="tab-agenda" class="tab-btn bg-white text-gray-600 hover:bg-orange-50 font-semibold px-5 py-2.5 rounded-lg transition-colors">Agenda & Remédios</button>
+        <button onclick="switchTab('tutores')" id="tab-tutores" class="tab-btn bg-white text-gray-600 hover:bg-orange-50 font-semibold px-5 py-2.5 rounded-lg transition-colors">Vínculo Familiar</button>
+        <button onclick="switchTab('mysql')" id="tab-mysql" class="tab-btn bg-white text-gray-600 hover:bg-orange-50 font-semibold px-5 py-2.5 rounded-lg transition-colors">MySQL & Performance</button>
       </div>
 
-      <div id="content-vacinas" class="tab-content bg-white p-8 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+      <div id="content-vacinas" class="tab-content bg-white p-8 rounded-2xl border border-stone-200 shadow-sm grid md:grid-cols-2 gap-8 items-center">
         <div>
           <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center mb-4">
             <i data-lucide="syringe" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">Controle Completo de Imunização</h3>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-3">Controle Completo de Imunização</h3>
           <p class="text-gray-600 leading-relaxed text-sm mb-4">Registro e acompanhamento de vacinas de cães e gatos, com controle das doses aplicadas e do acompanhamento de imunização.</p>
           <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-orange-100 px-3 py-1 rounded-full">
             <i data-lucide="check" class="w-4 h-4"></i> Tabela V10, Raiva, V4/V5 e Giardia
@@ -126,12 +130,12 @@
         </div>
       </div>
 
-      <div id="content-agenda" class="tab-content hidden bg-white p-8 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+      <div id="content-agenda" class="tab-content hidden bg-white p-8 rounded-2xl border border-stone-200 shadow-sm grid md:grid-cols-2 gap-8 items-center">
         <div>
           <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center mb-4">
             <i data-lucide="calendar" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">Agenda Inteligente com Seleção Rápida</h3>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-3">Agenda Inteligente com Seleção Rápida</h3>
           <p class="text-gray-600 leading-relaxed text-sm mb-4">Modelos pré-configurados para consultas veterinárias, agendamentos de banho e tosa, e gerenciamento de medicamentos diários.</p>
           <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-orange-100 px-3 py-1 rounded-full">
             <i data-lucide="clock" class="w-4 h-4"></i> Organização e acompanhamento de rotina
@@ -149,12 +153,12 @@
         </div>
       </div>
 
-      <div id="content-tutores" class="tab-content hidden bg-white p-8 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+      <div id="content-tutores" class="tab-content hidden bg-white p-8 rounded-2xl border border-stone-200 shadow-sm grid md:grid-cols-2 gap-8 items-center">
         <div>
           <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center mb-4">
             <i data-lucide="users" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">Vínculo Familiar de Tutores</h3>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-3">Vínculo Familiar de Tutores</h3>
           <p class="text-gray-600 leading-relaxed text-sm mb-4">Gerencie um pet compartilhado entre várias pessoas. O sistema associa quem é o Tutor Principal e quem entra com permissões de Suporte.</p>
           <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-orange-100 px-3 py-1 rounded-full">
             <i data-lucide="shield-check" class="w-4 h-4"></i> Código de Vínculo Seguro
@@ -172,12 +176,12 @@
         </div>
       </div>
 
-      <div id="content-mysql" class="tab-content hidden bg-white p-8 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+      <div id="content-mysql" class="tab-content hidden bg-white p-8 rounded-2xl border border-stone-200 shadow-sm grid md:grid-cols-2 gap-8 items-center">
         <div>
           <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center mb-4">
             <i data-lucide="database" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-3">Banco MySQL de Alta Performance</h3>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-3">Banco MySQL de Alta Performance</h3>
           <p class="text-gray-600 leading-relaxed text-sm mb-4">Estrutura de dados normalizada, rotina automatizada de backup em script e queries otimizadas testadas com testes de carga.</p>
           <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-700 bg-orange-100 px-3 py-1 rounded-full">
             <i data-lucide="cpu" class="w-4 h-4"></i> Backups e Queries Indexadas
@@ -196,26 +200,26 @@
 
   <section id="pets" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
     <div class="text-center mb-8">
-      <h2 class="text-3xl font-bold text-gray-900">Pets Cadastrados no App</h2>
+      <h2 class="text-3xl font-semibold text-gray-900">Pets Cadastrados no App</h2>
       <p class="text-gray-600 mt-2">Filtre por espécie ou busque pelo nome para interagir com os perfis.</p>
     </div>
 
     <div class="max-w-xl mx-auto mb-10 flex flex-col sm:flex-row gap-3">
       <div class="relative flex-1">
         <i data-lucide="search" class="w-5 h-5 absolute left-3.5 top-3.5 text-gray-400"></i>
-        <input type="text" id="searchInput" onkeyup="filterPets()" placeholder="Buscar pet por nome..." class="w-full pl-10 pr-4 py-3 rounded-xl border border-orange-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white text-sm">
+        <input type="text" id="searchInput" onkeyup="filterPets()" placeholder="Buscar pet por nome..." class="w-full pl-10 pr-4 py-3 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white text-sm">
       </div>
       <div class="flex gap-2">
-        <button onclick="setFilter('todos')" data-filter="todos" aria-pressed="true" class="filter-btn bg-brand-500 text-white font-bold px-4 py-3 rounded-xl text-xs flex-1 transition-all">Todos</button>
-        <button onclick="setFilter('cao')" data-filter="cao" aria-pressed="false" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Cães</button>
-        <button onclick="setFilter('gato')" data-filter="gato" aria-pressed="false" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Gatos</button>
-        <button onclick="setFilter('exotico')" data-filter="exotico" aria-pressed="false" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Outros</button>
+        <button onclick="setFilter('todos')" data-filter="todos" aria-pressed="true" class="filter-btn bg-brand-500 text-white font-semibold px-4 py-3 rounded-lg text-xs flex-1 transition-colors">Todos</button>
+        <button onclick="setFilter('cao')" data-filter="cao" aria-pressed="false" class="filter-btn bg-white text-gray-600 border border-stone-300 font-semibold px-4 py-3 rounded-lg text-xs flex-1 hover:bg-orange-50 transition-colors">Cães</button>
+        <button onclick="setFilter('gato')" data-filter="gato" aria-pressed="false" class="filter-btn bg-white text-gray-600 border border-stone-300 font-semibold px-4 py-3 rounded-lg text-xs flex-1 hover:bg-orange-50 transition-colors">Gatos</button>
+        <button onclick="setFilter('exotico')" data-filter="exotico" aria-pressed="false" class="filter-btn bg-white text-gray-600 border border-stone-300 font-semibold px-4 py-3 rounded-lg text-xs flex-1 hover:bg-orange-50 transition-colors">Outros</button>
       </div>
     </div>
 
     <div id="petsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       
-      <div data-especie="cao" data-nome="thor" onclick="openModal('Thor', 'Cão', 'Beagle', '3 anos', '12 kg', 'Vacina V10 atualizada, Banho agendado para Sábado. Tutor Principal associado.', 'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-2xl overflow-hidden shadow-sm border border-orange-100 hover:shadow-lg transition-all cursor-pointer group">
+      <div data-especie="cao" data-nome="thor" onclick="openModal('Thor', 'Cão', 'Beagle', '3 anos', '12 kg', 'Vacina V10 atualizada, Banho agendado para Sábado. Tutor Principal associado.', 'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-md transition-shadow cursor-pointer group">
         <div class="relative h-48 overflow-hidden">
           <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=600&q=80" alt="Thor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-brand-600 font-semibold text-xs px-2.5 py-1 rounded-full">Cão</span>
@@ -230,7 +234,7 @@
         </div>
       </div>
 
-      <div data-especie="gato" data-nome="frajola" onclick="openModal('Frajola', 'Gato', 'SDR', '2 anos', '4.2 kg', 'Informações do pet e registros de vacinação em dia. Compartilhado com Tutor Suporte.', 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-2xl overflow-hidden shadow-sm border border-orange-100 hover:shadow-lg transition-all cursor-pointer group">
+      <div data-especie="gato" data-nome="frajola" onclick="openModal('Frajola', 'Gato', 'SDR', '2 anos', '4.2 kg', 'Informações do pet e registros de vacinação em dia. Compartilhado com Tutor Suporte.', 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-md transition-shadow cursor-pointer group">
         <div class="relative h-48 overflow-hidden">
           <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80" alt="Frajola" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-brand-600 font-semibold text-xs px-2.5 py-1 rounded-full">Gato</span>
@@ -245,7 +249,7 @@
         </div>
       </div>
 
-      <div data-especie="gato" data-nome="simba" onclick="openModal('Simba', 'Gato', 'Persa', '4 anos', '5 kg', 'Ração Renal especial, Monitoramento de hidratação ativo.', 'https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-2xl overflow-hidden shadow-sm border border-orange-100 hover:shadow-lg transition-all cursor-pointer group">
+      <div data-especie="gato" data-nome="simba" onclick="openModal('Simba', 'Gato', 'Persa', '4 anos', '5 kg', 'Ração Renal especial, Monitoramento de hidratação ativo.', 'https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-md transition-shadow cursor-pointer group">
         <div class="relative h-48 overflow-hidden">
           <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=600&q=80" alt="Simba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-brand-600 font-semibold text-xs px-2.5 py-1 rounded-full">Gato</span>
@@ -260,7 +264,7 @@
         </div>
       </div>
 
-      <div data-especie="exotico" data-nome="floquinho" onclick="openModal('Floquinho', 'Coelho', 'Mini Lion', '1 ano', '1.5 kg', 'Consulta de rotina com especialista em exóticos realizada.', 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-2xl overflow-hidden shadow-sm border border-orange-100 hover:shadow-lg transition-all cursor-pointer group">
+      <div data-especie="exotico" data-nome="floquinho" onclick="openModal('Floquinho', 'Coelho', 'Mini Lion', '1 ano', '1.5 kg', 'Consulta de rotina com especialista em exóticos realizada.', 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=600&q=80')" class="pet-card bg-white rounded-xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-md transition-shadow cursor-pointer group">
         <div class="relative h-48 overflow-hidden">
           <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=600&q=80" alt="Floquinho" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
           <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-brand-600 font-semibold text-xs px-2.5 py-1 rounded-full">Coelho</span>
@@ -278,19 +282,19 @@
     </div>
   </section>
 
-  <section id="evolucao" class="py-16 bg-white border-t border-orange-100 scroll-mt-24">
+  <section id="evolucao" class="py-16 bg-white border-t border-stone-200 scroll-mt-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="bg-orange-100 text-brand-700 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded-full">Gestão & Desenvolvimento TCC</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Evolução e Bastidores da Criação</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-3">Evolução e Bastidores da Criação</h2>
         <p class="text-gray-600 mt-3 text-lg">Trajetória detalhada das Sprints do projeto, engenharia do banco de dados MySQL, APIs do Spring Boot e a inovadora apresentação web do TCC.</p>
       </div>
 
-      <div class="relative border-l-2 border-brand-500/30 ml-4 md:ml-32 space-y-12 mb-16">
+      <div class="relative border-l-2 border-orange-200 ml-4 md:ml-32 space-y-12 mb-16">
         
         <div class="relative pl-6 md:pl-8">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-orange-100"></div>
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-white"></div>
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-orange-100 px-2.5 py-0.5 rounded-full">Planejamento & Escopo</span>
           <h3 class="text-xl font-bold text-gray-900 mt-2">Especificação de Requisitos & Diagrama MER</h3>
           <p class="text-gray-600 text-sm mt-1 max-w-2xl leading-relaxed">
@@ -299,7 +303,7 @@
         </div>
 
         <div class="relative pl-6 md:pl-8">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-orange-100"></div>
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-white"></div>
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-orange-100 px-2.5 py-0.5 rounded-full">Sprints 5 & 6 - Back-end e Módulos</span>
           <h3 class="text-xl font-bold text-gray-900 mt-2">Endpoints Spring Boot & CRUD do Pet</h3>
           <p class="text-gray-600 text-sm mt-1 max-w-2xl leading-relaxed">
@@ -308,7 +312,7 @@
         </div>
 
         <div class="relative pl-6 md:pl-8">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-orange-100"></div>
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-white"></div>
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-orange-100 px-2.5 py-0.5 rounded-full">Sprints 7 & 8 - Regras do Banco & Telas Mobile</span>
           <h3 class="text-xl font-bold text-gray-900 mt-2">Tabela Associativa TUTORES_PETS & Bottom Navigation</h3>
           <p class="text-gray-600 text-sm mt-1 max-w-2xl leading-relaxed">
@@ -317,7 +321,7 @@
         </div>
 
         <div class="relative pl-6 md:pl-8">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-orange-100"></div>
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-white"></div>
           <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-orange-100 px-2.5 py-0.5 rounded-full">Sprints 9 & 10 - Validação, Otimização & Backup</span>
           <h3 class="text-xl font-bold text-gray-900 mt-2">Massa de Dados, Testes de Carga & Script de Backup MySQL</h3>
           <p class="text-gray-600 text-sm mt-1 max-w-2xl leading-relaxed">
@@ -326,7 +330,7 @@
         </div>
 
         <div class="relative pl-6 md:pl-8">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-orange-600 ring-4 ring-orange-200"></div>
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-orange-600 ring-4 ring-white"></div>
           <span class="text-xs font-bold uppercase tracking-wider text-white bg-brand-600 px-2.5 py-0.5 rounded-full">Metodologia Inovadora de Apresentação</span>
           <h3 class="text-xl font-bold text-gray-900 mt-2">Desenvolvimento do Site Landing Page em Substituição ao PowerPoint</h3>
           <p class="text-gray-600 text-sm mt-1 max-w-2xl leading-relaxed">
@@ -348,18 +352,18 @@
     </div>
   </section>
 
-  <section id="equipe" class="py-16 bg-cream border-t border-orange-100 scroll-mt-24">
+  <section id="equipe" class="py-16 bg-cream border-t border-stone-200 scroll-mt-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-12">
         <span class="bg-orange-100 text-brand-700 font-bold text-xs uppercase tracking-widest px-3 py-1 rounded-full">Nosso Time</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Membros do Grupo</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-3">Membros do Grupo</h2>
         <p class="text-gray-600 mt-2">Conheça os responsáveis por dar vida ao projeto PetVerso.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
         
-        <div class="bg-white p-6 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center font-bold text-lg mb-4">
+        <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow lg:col-span-2">
+          <div class="w-12 h-12 rounded-lg bg-orange-50 text-brand-700 flex items-center justify-center font-semibold text-lg mb-4">
             CE
           </div>
           <h3 class="text-xl font-bold text-gray-900">Carlos Eduardo</h3>
@@ -369,8 +373,8 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center font-bold text-lg mb-4">
+        <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow lg:col-span-2">
+          <div class="w-12 h-12 rounded-lg bg-orange-50 text-brand-700 flex items-center justify-center font-semibold text-lg mb-4">
             JL
           </div>
           <h3 class="text-xl font-bold text-gray-900">Juan Lopes</h3>
@@ -380,8 +384,8 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center font-bold text-lg mb-4">
+        <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow lg:col-span-2">
+          <div class="w-12 h-12 rounded-lg bg-orange-50 text-brand-700 flex items-center justify-center font-semibold text-lg mb-4">
             DY
           </div>
           <h3 class="text-xl font-bold text-gray-900">Daniel Yuji (Japonês)</h3>
@@ -391,8 +395,8 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center font-bold text-lg mb-4">
+        <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow lg:col-span-2 lg:col-start-2">
+          <div class="w-12 h-12 rounded-lg bg-orange-50 text-brand-700 flex items-center justify-center font-semibold text-lg mb-4">
             IB
           </div>
           <h3 class="text-xl font-bold text-gray-900">Ingrid Brito</h3>
@@ -402,8 +406,8 @@
           </p>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-shadow md:col-span-2 lg:col-span-1">
-          <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-600 flex items-center justify-center font-bold text-lg mb-4">
+        <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow lg:col-span-2 md:col-start-2 lg:col-start-4">
+          <div class="w-12 h-12 rounded-lg bg-orange-50 text-brand-700 flex items-center justify-center font-semibold text-lg mb-4">
             GL
           </div>
           <h3 class="text-xl font-bold text-gray-900">Gabriel Lincoln</h3>
@@ -417,7 +421,7 @@
     </div>
   </section>
 
-  <section class="py-16 bg-white border-t border-orange-100">
+  <section class="py-16 bg-white border-t border-stone-200">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <div class="w-16 h-16 rounded-2xl bg-orange-100 text-brand-600 flex items-center justify-center mx-auto mb-4">
         <i data-lucide="heart" class="w-8 h-8"></i>
@@ -430,7 +434,7 @@
   </section>
 
   <div id="petModal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl transition-all transform scale-100">
+    <div class="bg-white rounded-2xl max-w-md w-full overflow-hidden shadow-xl transition-all transform scale-100">
       <div class="relative h-56">
         <img id="modalImg" src="" alt="Pet" class="w-full h-full object-cover">
         <button onclick="closeModal()" class="absolute top-4 right-4 bg-white/80 backdrop-blur-md text-gray-700 hover:text-black rounded-full p-2 transition-colors">
@@ -440,7 +444,7 @@
       <div class="p-6">
         <div class="flex justify-between items-start mb-4">
           <div>
-            <h3 id="modalName" class="text-2xl font-extrabold text-gray-900"></h3>
+            <h3 id="modalName" class="text-2xl font-bold text-gray-900"></h3>
             <p id="modalEspecie" class="text-sm font-semibold text-brand-600"></p>
           </div>
           <span class="bg-orange-100 text-brand-700 text-xs font-bold px-3 py-1 rounded-full">Status: Em dia</span>
@@ -462,14 +466,14 @@
           <p id="modalInfo" class="text-sm text-gray-600 leading-relaxed"></p>
         </div>
 
-        <button onclick="closeModal()" class="mt-6 w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl transition-colors shadow-md">
+        <button onclick="closeModal()" class="mt-6 w-full py-3 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-lg transition-colors shadow-sm">
           Fechar Visualização
         </button>
       </div>
     </div>
   </div>
 
-  <footer class="mt-auto bg-white border-t border-orange-100 py-8">
+  <footer class="mt-auto bg-white border-t border-stone-200 py-8">
     <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
       <p>&copy; 2026 PetVerso - Gestão de TCC. Todos os direitos reservados.</p>
     </div>
@@ -498,14 +502,14 @@
     function switchTab(tab) {
       document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
       document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.remove('bg-brand-500', 'text-white');
+        btn.classList.remove('bg-brand-600', 'text-white');
         btn.classList.add('bg-white', 'text-gray-600');
       });
 
       document.getElementById('content-' + tab).classList.remove('hidden');
       const activeBtn = document.getElementById('tab-' + tab);
       activeBtn.classList.remove('bg-white', 'text-gray-600');
-      activeBtn.classList.add('bg-brand-500', 'text-white');
+      activeBtn.classList.add('bg-brand-600', 'text-white');
     }
 
     function setFilter(filter) {
@@ -518,7 +522,7 @@
         btn.classList.toggle('bg-white', !isActive);
         btn.classList.toggle('text-gray-600', !isActive);
         btn.classList.toggle('border', !isActive);
-        btn.classList.toggle('border-orange-200', !isActive);
+        btn.classList.toggle('border-stone-300', !isActive);
       });
       filterPets();
     }

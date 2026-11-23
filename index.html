@@ -27,10 +27,10 @@
 </head>
 <body class="bg-cream text-gray-800 font-sans antialiased min-h-screen flex flex-col scroll-smooth">
 
-  <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-orange-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur-md border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center">
-        <a href="index.html" class="text-3xl font-black bg-gradient-to-r from-brand-600 via-amber-500 to-brand-500 bg-clip-text text-transparent tracking-tight">
+        <a href="index.html" class="text-2xl font-bold text-brand-700 tracking-tight">
           PetVerso
         </a>
       </div>
@@ -38,7 +38,7 @@
       <nav class="hidden md:flex items-center space-x-8">
         <a href="#passos" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Passo a Passo</a>
         
-        <a href="tutorial.html" class="bg-brand-500 hover:bg-brand-600 text-white font-bold px-4 py-2 rounded-xl transition-all shadow-sm flex items-center gap-1.5 text-sm">
+        <a href="tutorial.html" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors shadow-sm flex items-center gap-1.5 text-sm">
           <i data-lucide="layout" class="w-4 h-4"></i> Landing page
         </a>
       </nav>
@@ -46,74 +46,80 @@
   </header>
 
   <main class="flex-1">
-    <section class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div class="inline-flex items-center space-x-2 bg-orange-100 text-brand-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+    <section class="py-14 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center space-x-2 bg-orange-100/80 text-brand-700 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
         <i data-lucide="book-open" class="w-4 h-4"></i>
         <span>Guia oficial do aplicativo</span>
       </div>
       
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 tracking-tight max-w-4xl mx-auto leading-tight">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 tracking-tight max-w-4xl mx-auto leading-tight">
         Como utilizar o <span class="text-brand-500">PetVerso</span> na prática
       </h1>
       
-      <p class="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+      <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
         Aprenda de forma rápida como cadastrar o seu pet, gerenciar a agenda de cuidados e compartilhar a rotina com a sua família. Clique em qualquer imagem para ampliá-la.
       </p>
     </section>
 
-    <section id="passos" class="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    <section id="passos" class="py-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
-      <div class="bg-white p-8 sm:p-10 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+      <div class="bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-sm grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <span class="inline-block bg-orange-100 text-brand-700 font-black text-sm px-3 py-1 rounded-full mb-4">Passo 01</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Cadastro e Perfil do Pet</h2>
+          <span class="inline-block bg-orange-100 text-brand-700 font-semibold text-sm px-3 py-1 rounded-full mb-4">Passo 01</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">Cadastro e Perfil do Pet</h2>
           <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
             O primeiro passo é registrar as informações principais do seu animal de estimação. Insira o nome, espécie, raça, idade e peso para manter todas as informações do pet e os registros de vacinação organizados em um só lugar.
           </p>
         </div>
-        <div class="bg-white p-3 rounded-2xl border border-orange-200 shadow-sm flex flex-col items-center justify-center text-center mx-auto w-full max-w-sm group">
-          <div class="w-full rounded-xl overflow-hidden bg-gray-50 cursor-pointer relative shadow-inner" onclick="openImageModal('imagens/tutorial-tela-1.png', 'Cadastro e Perfil do Pet')">
-            <img src="imagens/tutorial-tela-1.png" alt="Tela de Cadastro e Perfil do Pet" class="w-full h-auto object-cover max-h-[320px] group-hover:scale-105 transition-transform duration-300" onerror="this.parentElement.innerHTML='<div class=\'py-12 text-gray-400 text-xs\'><i data-lucide=\'image\' class=\'w-8 h-8 mx-auto mb-2 opacity-50\'></i><strong>Adicione a imagem</strong><br>imagens/tutorial-tela-1.png</div>'">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-bold text-xs gap-1">
-              <i data-lucide="zoom-in" class="w-5 h-5"></i> Clique para ampliar
+        <div class="bg-white p-3 rounded-xl border border-stone-200 shadow-sm flex flex-col items-center justify-center text-center mx-auto w-full max-w-sm group">
+          <div class="relative mx-auto w-[210px] max-w-full h-[400px] rounded-[2rem] border-[6px] border-stone-800 bg-stone-800 p-1.5 shadow-md group-hover:shadow-lg transition-shadow cursor-pointer" onclick="openImageModal('imagens/tutorial-tela-1-limpa.png', 'Cadastro e Perfil do Pet')">
+            <div class="relative h-full w-full overflow-hidden rounded-[1.4rem] bg-white">
+              <img src="imagens/tutorial-tela-1-limpa.png" alt="Tela de Cadastro e Perfil do Pet" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]" onerror="this.parentElement.innerHTML='<div class=\'py-12 text-gray-400 text-xs\'><i data-lucide=\'image\' class=\'w-8 h-8 mx-auto mb-2 opacity-50\'></i><strong>Adicione a imagem</strong><br>imagens/tutorial-tela-1-limpa.png</div>'">
+              <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-bold text-xs gap-1">
+                <i data-lucide="zoom-in" class="w-5 h-5"></i> Clique para ampliar
+              </div>
             </div>
           </div>
           <span class="text-xs text-gray-400 mt-2">Tela 1: Perfil do Pet</span>
         </div>
       </div>
 
-      <div class="bg-white p-8 sm:p-10 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+      <div class="bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-sm grid md:grid-cols-2 gap-8 items-center">
         <div class="md:order-2">
-          <span class="inline-block bg-orange-100 text-brand-700 font-black text-sm px-3 py-1 rounded-full mb-4">Passo 02</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Agenda de Cuidados & Lembretes</h2>
+          <span class="inline-block bg-orange-100 text-brand-700 font-semibold text-sm px-3 py-1 rounded-full mb-4">Passo 02</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">Agenda de Cuidados & Lembretes</h2>
           <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
             Utilize a aba de agenda para gerenciar compromissos importantes como banhos, tosas, consultas veterinárias e horários de medicamentos de forma organizada e prática.
           </p>
         </div>
-        <div class="bg-white p-3 rounded-2xl border border-orange-200 shadow-sm flex flex-col items-center justify-center text-center mx-auto w-full max-w-sm md:order-1 group">
-          <div class="w-full rounded-xl overflow-hidden bg-gray-50 cursor-pointer relative shadow-inner" onclick="openImageModal('imagens/tutorial-tela-2.png', 'Agenda de Cuidados & Lembretes')">
-            <img src="imagens/tutorial-tela-2.png" alt="Tela da Agenda de Cuidados" class="w-full h-auto object-cover max-h-[320px] group-hover:scale-105 transition-transform duration-300" onerror="this.parentElement.innerHTML='<div class=\'py-12 text-gray-400 text-xs\'><i data-lucide=\'image\' class=\'w-8 h-8 mx-auto mb-2 opacity-50\'></i><strong>Adicione a imagem</strong><br>imagens/tutorial-tela-2.png</div>'">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-bold text-xs gap-1">
-              <i data-lucide="zoom-in" class="w-5 h-5"></i> Clique para ampliar
+        <div class="bg-white p-3 rounded-xl border border-stone-200 shadow-sm flex flex-col items-center justify-center text-center mx-auto w-full max-w-sm md:order-1 group">
+          <div class="relative mx-auto w-[210px] max-w-full h-[400px] rounded-[2rem] border-[6px] border-stone-800 bg-stone-800 p-1.5 shadow-md group-hover:shadow-lg transition-shadow cursor-pointer" onclick="openImageModal('imagens/tutorial-tela-2.png', 'Agenda de Cuidados & Lembretes')">
+            <div class="relative h-full w-full overflow-hidden rounded-[1.4rem] bg-white">
+              <img src="imagens/tutorial-tela-2.png" alt="Tela da Agenda de Cuidados" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]" onerror="this.parentElement.innerHTML='<div class=\'py-12 text-gray-400 text-xs\'><i data-lucide=\'image\' class=\'w-8 h-8 mx-auto mb-2 opacity-50\'></i><strong>Adicione a imagem</strong><br>imagens/tutorial-tela-2.png</div>'">
+              <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-bold text-xs gap-1">
+                <i data-lucide="zoom-in" class="w-5 h-5"></i> Clique para ampliar
+              </div>
             </div>
           </div>
           <span class="text-xs text-gray-400 mt-2">Tela 2: Agenda</span>
         </div>
       </div>
 
-      <div class="bg-white p-8 sm:p-10 rounded-3xl border border-orange-100 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+      <div class="bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-sm grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <span class="inline-block bg-orange-100 text-brand-700 font-black text-sm px-3 py-1 rounded-full mb-4">Passo 03</span>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Tutoria Compartilhada & Vínculos</h2>
+          <span class="inline-block bg-orange-100 text-brand-700 font-semibold text-sm px-3 py-1 rounded-full mb-4">Passo 03</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">Tutoria Compartilhada & Vínculos</h2>
           <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
             Como cuidar de um pet é uma tarefa coletiva, o Tutor Principal pode gerar um código de vínculo seguro para convidar familiares ou cuidadores. Assim, todos acompanham e atualizam as informações do mesmo animal simultaneamente.
           </p>
         </div>
-        <div class="bg-white p-3 rounded-2xl border border-orange-200 shadow-sm flex flex-col items-center justify-center text-center mx-auto w-full max-w-sm group">
-          <div class="w-full rounded-xl overflow-hidden bg-gray-50 cursor-pointer relative shadow-inner" onclick="openImageModal('imagens/tutorial-tela-3.png', 'Tutoria Compartilhada & Vínculos')">
-            <img src="imagens/tutorial-tela-3.png" alt="Tela de Tutoria Compartilhada" class="w-full h-auto object-cover max-h-[320px] group-hover:scale-105 transition-transform duration-300" onerror="this.parentElement.innerHTML='<div class=\'py-12 text-gray-400 text-xs\'><i data-lucide=\'image\' class=\'w-8 h-8 mx-auto mb-2 opacity-50\'></i><strong>Adicione a imagem</strong><br>imagens/tutorial-tela-3.png</div>'">
-            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-bold text-xs gap-1">
-              <i data-lucide="zoom-in" class="w-5 h-5"></i> Clique para ampliar
+        <div class="bg-white p-3 rounded-xl border border-stone-200 shadow-sm flex flex-col items-center justify-center text-center mx-auto w-full max-w-sm group">
+          <div class="relative mx-auto w-[210px] max-w-full h-[400px] rounded-[2rem] border-[6px] border-stone-800 bg-stone-800 p-1.5 shadow-md group-hover:shadow-lg transition-shadow cursor-pointer" onclick="openImageModal('imagens/tutorial-tela-3-limpa.png', 'Tutoria Compartilhada & Vínculos')">
+            <div class="relative h-full w-full overflow-hidden rounded-[1.4rem] bg-white">
+              <img src="imagens/tutorial-tela-3-limpa.png" alt="Tela de Tutoria Compartilhada" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]" onerror="this.parentElement.innerHTML='<div class=\'py-12 text-gray-400 text-xs\'><i data-lucide=\'image\' class=\'w-8 h-8 mx-auto mb-2 opacity-50\'></i><strong>Adicione a imagem</strong><br>imagens/tutorial-tela-3-limpa.png</div>'">
+              <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-bold text-xs gap-1">
+                <i data-lucide="zoom-in" class="w-5 h-5"></i> Clique para ampliar
+              </div>
             </div>
           </div>
           <span class="text-xs text-gray-400 mt-2">Tela 3: Vínculos</span>
@@ -123,7 +129,7 @@
     </section>
 
     <div class="text-center py-16">
-      <a href="tutorial.html" class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-md text-base">
+      <a href="tutorial.html" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-sm text-base">
         <i data-lucide="arrow-right" class="w-5 h-5"></i> Landing page
       </a>
     </div>
@@ -143,7 +149,7 @@
     </div>
   </div>
 
-  <footer class="mt-auto bg-white border-t border-orange-100 py-8">
+  <footer class="mt-auto bg-white border-t border-stone-200 py-8">
     <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
       <p>&copy; 2026 PetVerso - Gestão de TCC. Todos os direitos reservados.</p>
     </div>
