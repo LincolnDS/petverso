@@ -206,10 +206,10 @@
         <input type="text" id="searchInput" onkeyup="filterPets()" placeholder="Buscar pet por nome..." class="w-full pl-10 pr-4 py-3 rounded-xl border border-orange-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-white text-sm">
       </div>
       <div class="flex gap-2">
-        <button onclick="setFilter('todos')" class="filter-btn bg-brand-500 text-white font-bold px-4 py-3 rounded-xl text-xs flex-1 transition-all">Todos</button>
-        <button onclick="setFilter('cao')" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Cães</button>
-        <button onclick="setFilter('gato')" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Gatos</button>
-        <button onclick="setFilter('exotico')" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Outros</button>
+        <button onclick="setFilter('todos')" data-filter="todos" aria-pressed="true" class="filter-btn bg-brand-500 text-white font-bold px-4 py-3 rounded-xl text-xs flex-1 transition-all">Todos</button>
+        <button onclick="setFilter('cao')" data-filter="cao" aria-pressed="false" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Cães</button>
+        <button onclick="setFilter('gato')" data-filter="gato" aria-pressed="false" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Gatos</button>
+        <button onclick="setFilter('exotico')" data-filter="exotico" aria-pressed="false" class="filter-btn bg-white text-gray-600 border border-orange-200 font-bold px-4 py-3 rounded-xl text-xs flex-1 hover:bg-orange-50 transition-all">Outros</button>
       </div>
     </div>
 
@@ -510,6 +510,16 @@
 
     function setFilter(filter) {
       currentFilter = filter;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        const isActive = btn.dataset.filter === filter;
+        btn.setAttribute('aria-pressed', isActive);
+        btn.classList.toggle('bg-brand-500', isActive);
+        btn.classList.toggle('text-white', isActive);
+        btn.classList.toggle('bg-white', !isActive);
+        btn.classList.toggle('text-gray-600', !isActive);
+        btn.classList.toggle('border', !isActive);
+        btn.classList.toggle('border-orange-200', !isActive);
+      });
       filterPets();
     }
 
